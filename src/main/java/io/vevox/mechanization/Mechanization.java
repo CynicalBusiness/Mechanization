@@ -1,11 +1,17 @@
 package io.vevox.mechanization;
 
+import io.vevox.vevoxel.VevoxelAPI;
 import io.vevox.vevoxel.api.VevoxelPlugin;
+import io.vevox.vevoxel.io.PluginConsole;
 
 /**
  * @author Matthew Struble
  */
 public class Mechanization extends VevoxelPlugin {
+
+    private static Mechanization instance;
+    private PluginConsole console;
+
     @Override
     protected void loaded() {
         // Nothing
@@ -13,6 +19,9 @@ public class Mechanization extends VevoxelPlugin {
 
     @Override
     protected void enabled() {
+        instance = this;
+        console = getConsole();
+        console.setDebugEnabled(VevoxelAPI.isDebugEnabled());
 
     }
 
