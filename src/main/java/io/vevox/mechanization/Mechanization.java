@@ -34,7 +34,7 @@ public class Mechanization extends VevoxelPlugin {
      * Gets the mechanization inistance.
      * @return The mechanization instance.
      */
-    public static Mechanization getMechanization(){
+    public static Mechanization mechanization(){
         return instance;
     }
 }
