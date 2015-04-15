@@ -1,0 +1,10 @@
+name: Mechanization
+main: io.vevox.mechanization.Mechanization
+version: 0.1-SNAPSHOT
+
+author: Wehttam664
+authors: ['Wehttam664','Shadowofnight98','Icecrest']
+
+description: '[ Missing description ]'
+
+depend: ['VevoxelAPI']
