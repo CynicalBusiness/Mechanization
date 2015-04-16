@@ -1,10 +1,11 @@
 {
   "meta": {
     "name": "&7Stone Baking",
-    "description": "More efficiently converts cobblestone to smoothed stone.",
+    "description": "More efficiently converts cobblestone to smoothed stone."
   },
   "recipe": {
     "rows": 2,
+    "time": 30,
     "tool": {
       "material": "FLINT_AND_STEEL",
       "doConsume": true,
@@ -16,10 +17,22 @@
     },
     "matrix": {
       "keys": {
-        "C": "COBBLESTONE",
-        "s": "SAND",
-        "S": "STONE",
-        "g": "GRAVEL"
+        "C": {
+          "material": "COBBLESTONE",
+          "amount": 16
+        },
+        "s": {
+          "material": "SAND",
+          "amount": 4
+        },
+        "S": {
+          "material": "STONE",
+          "amount": 20
+        },
+        "g": {
+          "material": "GRAVEL",
+          "amount": 4
+        }
       },
       "input": [
         " CsC CsC ",
