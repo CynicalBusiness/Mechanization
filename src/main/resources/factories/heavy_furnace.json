@@ -7,7 +7,8 @@
   "size": {
     "width": 5,
     "height": 4,
-    "breadth": 3
+    "breadth": 3,
+    "rows": 3
   },
   "matrix": {
     "keys": {
