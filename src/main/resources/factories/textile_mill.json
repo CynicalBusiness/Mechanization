@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "&7Textile Mill",
-    "description": "A more efficient way to get wool."
+    "description": "A more efficient way to get wool. "
   },
   "recipes": ["wool"],
   "size": {
