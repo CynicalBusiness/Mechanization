@@ -11,7 +11,8 @@
       "doDamage": true
     },
     "fuel": {
-      /*what do i do here Matt since i have no furnace or anything*/
+      "material": "WHEAT",
+      "amount": "8"
     },
     "matrix": {
       "keys": {
