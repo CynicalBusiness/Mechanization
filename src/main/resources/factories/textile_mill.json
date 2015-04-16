@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "name": "&7Textile Mill",
+    "description": "A more efficient way to get wool."
+  },
+  "recipes": ["wool"],
+  "size": {
+    "width": "5",
+    "height": "2",
+    "breadth": "4",
+    "rows": "4"
+  },
+  "matrix": {
+    "keys": {
+      "W": "PLANKS",
+      "R": "RAIL",
+      "F": "FENCE",
+      "C": "CARPET",
+      "A": "AIR"
+    },
+    "layout": [
+      [
+        "WWWWW",
+        "FAAAF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      [
+        "ARRRA",
+        "FFFFF",
+        "CFFFC",
+        "CCCCC"
+      ]
+    ]
+  }
+}
