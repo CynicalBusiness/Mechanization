@@ -13,7 +13,7 @@ public class ToolParser implements Serializable {
     public final boolean consume,damage;
 
     public ToolParser(JsonObject tool) throws NullPointerException, ClassCastException, IllegalStateException {
-        material = new KeyParser(tool.getAsJsonObject("material"));
+        material = new KeyParser(tool.getAsJsonObject("item"));
         consume = tool.get("doConsume").getAsBoolean();
         damage = tool.get("doDamage").getAsBoolean();
     }

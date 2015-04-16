@@ -6,7 +6,10 @@
   "recipe": {
     "rows": "2",
     "tool": {
-      "material": "WOODEN_HOE",
+      "item": {
+        "material": "WOODEN_HOE",
+        "amount": 1
+      },
       "doConsume": false,
       "doDamage": true
     },
