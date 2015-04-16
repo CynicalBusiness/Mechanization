@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "name": "&7Heavy Furnace",
+    "description": "A larger furnace with larger capabilities."
+  },
+  "recipes": ["stone"],
+  "size": {
+    "width": 5,
+    "height": 4,
+    "breadth": 3
+  },
+  "matrix": {
+    "keys": {
+      "I": "IRON_BLOCK",
+      "S": "STONE:0",
+      "F": "FURNACE",
+      "O": "OBSIDIAN",
+      "L": "LAVA",
+      "B": "STONE_BRICK:0"
+    },
+    "layout": [
+      [
+        "ISFFFSI",
+        "SOOOOOS",
+        "ISFFFSI"
+      ],
+      [
+        "BSFFFSB",
+        "SLLLLLS",
+        "BSFFFSB"
+      ],
+      [
+        "BSSSSSB",
+        "SLLLLLS",
+        "BSSSSSB"
+      ],
+      [
+        "IBBBBBI",
+        "BOOOOOB",
+        "IBBBBBI"
+      ]
+    ]
+  }
+}
