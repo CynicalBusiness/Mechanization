@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "&7Stone Baking",
-    "description": "More efficiently converts cobblestone to smoothed stone.",
+    "description": "More efficiently converts cobblestone to smoothed stone."
   },
   "recipe": {
     "rows": 2,
