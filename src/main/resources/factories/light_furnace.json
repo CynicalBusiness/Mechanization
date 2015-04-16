@@ -1,6 +1,6 @@
 {
   "meta": {
-    "name": "&7Heavy Furnace",
+    "name": "&7Light Furnace",
     "description": "A larger furnace with larger capabilities."
   },
   "recipes": ["stone"],
