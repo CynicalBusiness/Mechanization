@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "name": "&7Wool Spinning",
+    "description": "A way to get more wool for your string"
+  },
+  "recipe": {
+    "rows": "2",
+    "tool": {
+      "material": "WOODEN_HOE",
+      "doConsume": false,
+      "doDamage": true
+    },
+    "fuel": {
+      /*what do i do here Matt since i have no furnace or anything*/
+    },
+    "matrix": {
+      "keys": {
+        "S": "STRING",
+        "F": "FEATHER",
+        "s": "STICK"
+      },
+      "input":[
+        "S S S S S",
+        "sfs f sfs"
+      ],
+      "output": [
+        "W   W   W",
+        "s  W W  s"
+      ]
+    }
+  }
+}
