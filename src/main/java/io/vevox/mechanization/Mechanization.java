@@ -9,6 +9,8 @@ import io.vevox.vevoxel.io.PluginConsole;
  */
 public class Mechanization extends VevoxelPlugin {
 
+    public static final int ROW_LENGTH = 9;
+
     private static Mechanization instance;
     private PluginConsole console;
 
