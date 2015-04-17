@@ -42,4 +42,28 @@ public class RecipeMatrix implements Serializable {
         }
     }
 
+    public KeyParser inputMaterial(int row, int col){
+        return keys.get(input[row][col]);
+    }
+
+    public KeyParser outputMaterial(int row, int col){
+        return keys.get(output[row][col]);
+    }
+
+    public KeyParser[][] inputMatrix(){
+        KeyParser[][] matrix = new KeyParser[input.length][Mechanization.ROW_LENGTH];
+        for (int r = 0; r < matrix.length; r++)
+            for (int c = 0; c < matrix[r].length; c++)
+                matrix[r][c] = inputMaterial(r,c);
+        return matrix;
+    }
+
+    public KeyParser[][] outputMatrix(){
+        KeyParser[][] matrix = new KeyParser[input.length][Mechanization.ROW_LENGTH];
+        for (int r = 0; r < matrix.length; r++)
+            for (int c = 0; c < matrix[r].length; c++)
+                matrix[r][c] = outputMaterial(r,c);
+        return matrix;
+    }
+
 }
