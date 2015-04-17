@@ -17,6 +17,10 @@ public class MetaParser implements Serializable {
         description = meta.get("description").getAsString();
     }
 
+    public String strippedName() {
+        return ChatColor.stripColor(coloredName());
+    }
+
     public String coloredName(){
         return ChatColor.translateAlternateColorCodes('&', name);
     }
