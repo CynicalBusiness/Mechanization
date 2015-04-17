@@ -35,11 +35,10 @@ public class RecipeMatrix implements Serializable {
     }
 
     private void parseMatrix(JsonArray array, char[][] chars){
-        for (int r = 0; r < chars.length; r++){
-            String row = array.get(r).getAsString();
+        for (int r = 0; r < chars.length; r++)
             for (int c = 0; c < chars[r].length; c++)
-                chars[r][c] = row.charAt(c);
-        }
+                chars[r][c] = array.get(r).getAsString().charAt(c);
+
     }
 
     public KeyParser inputMaterial(int row, int col){
