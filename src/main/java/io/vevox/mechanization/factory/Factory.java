@@ -6,6 +6,8 @@ import com.google.gson.JsonParseException;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
 import io.vevox.mechanization.MetaParser;
+import io.vevox.mechanization.recipe.Recipe;
+import io.vevox.mechanization.recipe.RecipeController;
 import org.apache.commons.io.FilenameUtils;
 
 import java.io.File;
@@ -40,6 +42,13 @@ public class Factory implements Serializable {
 
         size = new FactoryDimensions(root.getAsJsonObject("size"));
 
+    }
+
+    public Recipe[] recipes(){
+        Recipe[] recipes = new Recipe[this.recipes.length];
+        for (int i = 0; i < recipes.length; i++)
+            recipes[i] = RecipeController.recipe(this.recipes[i]);
+        return recipes;
     }
 
 }

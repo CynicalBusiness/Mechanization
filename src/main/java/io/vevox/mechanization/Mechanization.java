@@ -1,13 +1,23 @@
 package io.vevox.mechanization;
 
+import io.vevox.mechanization.factory.FactoryController;
+import io.vevox.mechanization.world.WorldFactoryContents;
+import io.vevox.mechanization.world.WorldFactory;
+import io.vevox.mechanization.recipe.RecipeController;
 import io.vevox.vevoxel.VevoxelAPI;
 import io.vevox.vevoxel.api.VevoxelPlugin;
 import io.vevox.vevoxel.io.PluginConsole;
+import org.bukkit.configuration.serialization.ConfigurationSerialization;
 
 /**
  * @author Matthew Struble
  */
 public class Mechanization extends VevoxelPlugin {
+
+    static {
+        ConfigurationSerialization.registerClass(WorldFactoryContents.class);
+        ConfigurationSerialization.registerClass(WorldFactory.class);
+    }
 
     public static final int ROW_LENGTH = 9;
 
@@ -24,6 +34,9 @@ public class Mechanization extends VevoxelPlugin {
         instance = this;
         console = getConsole();
         console.setDebugEnabled(VevoxelAPI.isDebugEnabled());
+
+        RecipeController.parseRecipes();
+        FactoryController.parseFactories();
 
     }
 
