@@ -11,8 +11,8 @@
         "material": "FLINT_AND_STEEL",
         "amount": 1
       },
-      "doConsume": true,
-      "doDamage": false
+      "doConsume": false,
+      "doDamage": true
     },
     "fuel": {
       "material": "COAL",
